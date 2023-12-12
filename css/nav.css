@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mobile-nav-row {
+  visibility: hidden;
+  display: none;
+}
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.link-style {
+  text-decoration: none;
+  color: #635eff;
+}
+.nav-title-row {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 540px) {
+  .nav-row {
+    display: none !important;
+  }
+  .nav-title {
+    margin-top: -5px;
+    padding-left: 20px;
+  }
+  .nav-logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .mobile-nav-row {
+    z-index: 200;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  .header-toggle {
+    display: inline;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 200px;
+  }
+  .header-toggle:hover {
+    background: linear-gradient(to bottom right, #625eff, #8849ff);
+  }
+  .nav-btn {
+    z-index: 2;
+    background: linear-gradient(to bottom right, #625eff, #8849ff);
+    font-size: 8px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  .header-close {
+    /* position: absolute; */
+    /* right: 4px; */
+    color: #ffffff;
+    transition: 0.5s ease;
+    display: block;
+    font-size: 20px;
+    /* border-radius: 50%; */
+  }
+  .menu-and-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: center; */
+  }
+  .nav {
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    left: -100%;
+    background: #1e1e37;
+    color: #ffffff;
+    width: 50%;
+    height: 100vh;
+    padding: 22px 0;
+    z-index: 100;
+    transition: 0.5s ease-out;
+  }
+  .opacity {
+    opacity: 10%;
+    transition: 0.5s;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .nav-item {
+    padding: 0 0;
+    /* border-bottom: 1px solid #625eff;*/
+    width: 45vw;
+  }
+  .nav-item:hover {
+    /* background-color: #625eff; */
+  }
+
+  .nav-item:hover .vl {
+    height: 0.2px;
+  }
+  .nav-link {
+    padding: 1vh 5vw !important;
+    color: #ffffff !important;
+    font-weight: 700;
+  }
+  .active-menu {
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  .active-menu:hover {
+    font-weight: 600;
+  }
+  .show {
+    left: 0;
+  }
+  .flip {
+    rotate: 180deg;
+    transition: 0.7s;
+  }
+  .hero-main-content {
+    padding-top: 70px;
+  }
+  .hr {
+    height: 1px;
+    background: #625eff;
+    width: 45vw;
+    margin-left: 5vw;
+  }
+  .sub-hr {
+    height: 1px;
+    background: #625eff;
+    width: 41vw;
+  }
+  .hr-minus {
+    height: 1px;
+    background: #625eff;
+    width: 45vw;
+    margin-bottom: -5px;
+    margin-left: -4vw;
+  }
+  .sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .sub-menu-icon-div {
+    padding: 1px 10px;
+    background: #625eff;
+    text-align: center;
+  }
+  .sub-menu-icon {
+    font-size: 12px;
+    transition: 0.2s ease;
+  }
+  .sub-menu-icon-rotate {
+    rotate: 90deg;
+    transition: 0.4s ease;
+  }
+  .mobile-pages-group-display-none {
+    display: none;
+  }
+  .sub-nav-open {
+    display: block;
+  }
+  .mobile-pages-group {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9vw;
+  }
+  .mobile-page {
+    padding-top: 15px;
+    font-weight: 400;
+  }
+  .mobile-pages-group a {
+    padding: 2% 0;
+    text-decoration: none;
+  }
+  .mobile-pages-group li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #ffffff;
+  }
+  .mobile-page-top {
+    margin-top: 3%;
+  }
+  .mobile-page-bottom {
+    /* margin-bottom: -5%; */
+    margin-bottom: 3%;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .mobile-nav-row {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hero-main-content {
+    padding-top: 70px;
+  }
+}

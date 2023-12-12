@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-list{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    position: relative;
+}
+.rotate-arrow-90{
+    margin-top: 1px;
+}
+.nav-link-row li i{
+    transition: 0.3s ease;
+}
+.nav-link-row li:hover i{
+    rotate: -180deg;
+    transition: 0.8s ease;
+}
+.pages-group{
+    z-index: 30;
+    padding-left: 0;
+    position: absolute;
+    top: 24px;
+    width: 190px;
+    left: -68px;
+    background: #1E1E37;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    transition: 0.2s ease;
+    scale: 0.5;
+    transform:  translateY(-50px);
+}
+.page-list:hover .pages-group{
+    scale: 1;
+    transform: translateY(0px);
+    visibility: visible;
+    transition: 0.5s ease;
+}
+.page{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #7e3def;
+    margin-bottom: 0;
+    padding: 17px 0;
+    font-weight: 500;
+}
+.page:hover{
+    background-color: #7e3def;
+    transition: 0.3s ease;
+}
+.page:hover li{
+ font-weight: 600;
+}
+.page li{
+    font-size: 15px;
+}
+.page-no-border{
+    text-decoration: none;
+    border-bottom: 1px solid #7e3def;
+    padding: 17px 0;
+}
+.page-no-border li{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+.page-no-border:hover{
+    background-color: #7e3def;
+    transition: 0.3s ease;
+}
+.page-no-border:hover li{
+    font-weight: 600;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+    
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .pages-group{
+        width: 160px;
+        overflow-x: scroll;
+       }
+       .page{
+        padding: 14px 0;
+       }
+       .page li{
+        font-size: 15px;
+       }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    .pages-group{
+        width: 160px;
+        overflow-x: scroll;
+       }
+       .page{
+        padding: 14px 0;
+       }
+       .page li{
+        font-size: 15px;
+       }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .pages-group{
+        width: 140px;
+        overflow-x: scroll;
+       }
+       .page{
+        padding: 8px 0;
+       }
+       .page li{
+        font-size: 14px;
+       }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+   .pages-group{
+    width: 120px;
+    overflow-x: scroll;
+   }
+   .page{
+    padding: 6px 0;
+   }
+   .page li{
+    font-size: 12px;
+   }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+
+}

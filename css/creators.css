@@ -1,0 +1,1007 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* creator card style start from here */
+.creator-container{
+    max-width: 1320px;
+    margin: auto;
+}
+.creator-card-group{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 24px;
+}
+.creator-card{
+    background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+
+}
+.creator-image-container {
+    max-width: 60px;
+    margin: auto;
+    height: 60px;
+    position: relative;
+}
+.creator-card-image {
+    border-radius: 50%;
+    width: 100%;
+}
+.gg-check {
+    color: #ffffff;
+    margin-left: -4px;
+    font-weight: 700;
+    }
+.check-icon {
+    position: absolute;
+    top: 39%;
+    right: -8px;
+    background: #635eff;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creator-card-copy{
+    margin-top: 8px;
+}
+.creator-card-copy i{
+    color: #625EFF;
+}
+.creator-card-copy span{
+    font-size: 12px;
+    margin-left: 3px;
+    opacity: 60%;
+}
+.creator-card-title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.creator-card-info{
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.creator-card-info span{
+    font-size: 12px;
+}
+.creator-card-info i{
+    color: #625EFF;
+}
+.follow-btn{
+    margin: 27px auto auto auto;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    background: #1E1E37;
+    color: #625EFF;
+    font-weight: 600;
+}
+.follow-btn i{
+    font-size: 14px;
+}
+.follow-btn:hover{
+    background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+    color: #ffffff;
+}
+.info-2{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+    .creator-container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 22px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 60px;
+        margin: auto;
+        height: 60px;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 8px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+    }
+    .creator-card-copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 12px;
+    }
+    .creator-card-info i{
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 14px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .creator-container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 22px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 60px;
+        margin: auto;
+        height: 60px;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 8px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+    }
+    .creator-card-copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 12px;
+    }
+    .creator-card-info i{
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 14px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card-hide-three{
+        display: none;
+    }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    .creator-container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 18px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 60px;
+        margin: auto;
+        height: 60px;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 8px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+    }
+    .creator-card-copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 12px;
+    }
+    .creator-card-info i{
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 14px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card-hide-three{
+        display: none;
+    }
+    .card-hide-four{
+        display: none;
+    }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .creator-container{
+        max-width: 695px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 12px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -6px;
+        background: #635eff;
+        width: 12px;
+        height: 13px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 7px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .creator-card-copy span{
+        font-size: 11px;
+        margin-left: 2px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 10px;
+    }
+    .creator-card-info i{
+        font-size: 14px;
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 12px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .gg-drop-opacity{
+        width: 14px !important;
+        height: 14px !important;
+    }
+    .gg-drop-opacity:before{
+        height: 23px !important;
+    }
+    .card-hide-three{
+        display: none;
+    }
+    .card-hide-four{
+        display: none;
+    }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+    .creator-container{
+        max-width: 520px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -6px;
+        background: #635eff;
+        width: 12px;
+        height: 13px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 7px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .creator-card-copy span{
+        font-size: 11px;
+        margin-left: 2px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 10px;
+    }
+    .creator-card-info i{
+        font-size: 14px;
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 12px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .gg-drop-opacity{
+        width: 14px !important;
+        height: 14px !important;
+    }
+    .gg-drop-opacity:before{
+        height: 23px !important;
+    }
+    .card-hide-three{
+        display: none;
+    }
+    .card-hide-four{
+        display: none;
+    }
+    .hide-for-768-541{
+        display: none;
+    }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+    .creator-container{
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -6px;
+        background: #635eff;
+        width: 12px;
+        height: 13px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 7px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .creator-card-copy span{
+        font-size: 11px;
+        margin-left: 2px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 10px;
+    }
+    .creator-card-info i{
+        font-size: 14px;
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 20px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 13px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 12px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .gg-drop-opacity{
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gg-drop-opacity:before{
+        height: 22px !important;
+    }
+    .card-hide-three{
+        display: none;
+    }
+    .card-hide-four{
+        display: none;
+    }
+    .hide-for-768-541{
+        display: none;
+    }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+    .creator-container{
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 70px;
+        height: 70px;
+        margin: auto;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 8px;
+    }
+    .creator-card-copy i{
+        color: #625EFF;
+    }
+    .creator-card-copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 12px;
+    }
+    .creator-card-info i{
+        color: #625EFF;
+    }
+    .follow-btn{
+        margin: 24px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 14px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card-hide-three{
+        display: none;
+    }
+    .card-hide-four{
+        display: none;
+    }
+    .hide-for-768-541{
+        display: none;
+    }
+    .hide-for-480-359{
+        display: none;
+    }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+    .creator-container{
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
+    .creator-card-group{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+    .creator-card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator-image-container {
+        max-width: 70px;
+        height: 70px;
+        margin: auto;
+        position: relative;
+    }
+    .creator-card-image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg-check {
+        color: #ffffff;
+        margin-left: -4px;
+        font-weight: 700;
+        }
+    .check-icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator-card-copy{
+        margin-top: 7px;
+    }
+    .creator-card-copy i{
+        font-size: 13px;
+        color: #625EFF;
+    }
+    .creator-card-copy span{
+        font-size: 10px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator-card-title{
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator-card-info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator-card-info span{
+        font-size: 9px;
+    }
+    .creator-card-info i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .follow-btn{
+        margin: 20px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 13px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow-btn i{
+        font-size: 13px;
+    }
+    .follow-btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info-2{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-top: 2px;
+    }
+    .info-2 span{
+        margin-top: 4px;
+    } 
+    .gg-drop-opacity{
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gg-drop-opacity::before{
+        height: 22px !important;
+    }
+    .card-hide-three{
+        display: none;
+    }
+    .card-hide-four{
+        display: none;
+    }
+    .hide-for-768-541{
+        display: none;
+    }
+    .hide-for-480-359{
+        display: none;
+    }
+}
+/* creator card style end here */
